@@ -1,4 +1,72 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,200;1,300&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--primary-color: #d434fe;
+  --horizontal-line-color:rgba(255, 255, 255, 0.18);
+}
+.hrc{
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+body {
+	font-family: "Montserrat", sans-serif;
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	scroll-behavior: smooth;
+	background-color: #150e28;
+  font-size: 14px;
+  color: white;
+}
+/* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
+
+.border {
+	border-bottom: 1px solid red;
+}
+.border-test{
+  border: 1px solid red;
+}
+
+
+.actionBtn {
+	border-radius: 0.25rem;
+	background: linear-gradient(
+		270deg,
+		#903aff 0%,
+		#d434fe 56.42%,
+		#ff26b9 99.99%,
+		#fe34b9 100%
+	);
+	border: none;
+	width: 10.75rem;
+	height: 3.3rem;
+	padding: 0.5rem;
+}
+.mobile-menu {
+	overflow: hidden;
+	height: 0rem;
+}
+
+.mobile-menu.active {
+	height: 100vh;
+	overflow: auto;
+	transition: all 400ms ease-in-out;
+}
+.container {
+	max-width: 90rem;
+	border: none;
+	outline: none;
+}
+
+@media(min-width: 640px){
+  html{
+    font-size: 14.5px;
+  }
+}
+@media(min-width: 768px){
+  html{
+    font-size: 16px;
+  }
+  }
