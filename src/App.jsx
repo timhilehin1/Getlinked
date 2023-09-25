@@ -1,14 +1,7 @@
-import { useState } from 'react'
-import './App.css'
-
+import { React } from "react";
+import RouterPage from "./Router/RouterPage";
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-    <p>lets go</p>
-    </>
-  )
+	return <RouterPage />;
 }
 
-export default App
+export default App;
