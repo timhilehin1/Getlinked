@@ -4,6 +4,10 @@ import Idea from "./Idea";
 import Criteria from "./Criteria";
 import FAQ from "./FAQ";
 import Rules from "./Rules";
+import Timeline from "./Timeline";
+import Prizes from "./Prizes";
+import Partners from "./Partners";
+import Privacy from "./Privacy";
 import heroImage from "../assets/heroImage.svg";
 function Hero() {
 	return (
@@ -45,6 +49,13 @@ function Hero() {
 			<hr className='border-[--horizontal-line-color]' />
 			<FAQ />
 			<hr className='border-[--horizontal-line-color]' />
+			<Timeline />
+			<hr className='border-[--horizontal-line-color]' />
+			<Prizes />
+			<hr className='border-[--horizontal-line-color]' />
+			<Partners />
+			<hr className='border-[--horizontal-line-color]' />
+			<Privacy />
 		</>
 	);
 }

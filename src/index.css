@@ -22,7 +22,7 @@ body {
 }
 /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
 
-.border {
+.customBorder {
 	border-bottom: 1px solid red;
 }
 .border-test{
