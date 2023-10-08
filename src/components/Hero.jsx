@@ -9,6 +9,7 @@ import Prizes from "./Prizes";
 import Partners from "./Partners";
 import Privacy from "./Privacy";
 import heroImage from "../assets/heroImage.svg";
+
 function Hero() {
 	return (
 		<>
@@ -56,6 +57,7 @@ function Hero() {
 			<Partners />
 			<hr className='border-[--horizontal-line-color]' />
 			<Privacy />
+			<hr className='border-[--horizontal-line-color]' />
 		</>
 	);
 }
