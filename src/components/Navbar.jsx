@@ -1,21 +1,23 @@
 import { React, useState } from "react";
-import { Link } from "react-router-dom";
-import Button from "./Button";
+import { Link, NavLink } from "react-router-dom";
+import { RegisterButton, CustomButton } from "./Button";
 import Menu from "../assets/menu.svg";
 import { AiOutlineClose } from "react-icons/ai";
 
-function Navbar() {
+function Navbar({ isRegister }) {
 	const [open, setOpen] = useState(false);
 	const handleToggle = () => {
 		setOpen(!open);
 	};
 	return (
 		<>
-			<section className='text-white container mx-auto flex justify-between border items-center px-2'>
-				<p className='font-normal text-xl'>
-					get<span className='text-primary-color'>linked</span>
-				</p>
-				<nav className='hidden  md:flex  gap-5 relative'>
+			<section className='text-white container mx-auto flex justify-between border pt-2 md:pt-0  items-center px-2'>
+				<Link to='/'>
+					<p className='font-normal text-xl'>
+						get<span className='text-primary-color'>linked</span>
+					</p>
+				</Link>
+				<nav className='hidden  md:flex items-center gap-5 relative'>
 					<ul className='flex flex-row gap-6 text-sm grow items-center py-4'>
 						<Link to='/'>
 							<li className='font-normal'>Timeline</li>
@@ -26,12 +28,21 @@ function Navbar() {
 						<Link to='/'>
 							<li className='font-normal'>FAQS</li>
 						</Link>
-						<Link to='/'>
+						<NavLink
+							className={({ isActive }) => (isActive ? "active" : "")}
+							to='/contact'
+						>
 							<li className='font-normal'>Contact</li>
-						</Link>
-						<Link to='/'>
-							<Button text={"Register"} />
-						</Link>
+						</NavLink>
+						{isRegister ? (
+							<Link to='/register'>
+							<RegisterButton text={"Register"} />
+							</Link>
+						) : (
+							<Link to='/'>
+								<CustomButton text={"Register"} />
+							</Link>
+						)}
 					</ul>
 				</nav>
 
@@ -53,7 +64,9 @@ function Navbar() {
 			</section>
 
 			<nav
-				className={`mobile-menu ${open ? 'active' : ''} py-4 text-white  items-center md:hidden`}
+				className={`mobile-menu ${
+					open ? "active" : ""
+				} py-4 text-white  items-center md:hidden`}
 			>
 				<ul className='flex flex-col gap-4 py-3 px-4'>
 					<Link to='/'>
@@ -65,15 +78,15 @@ function Navbar() {
 					<Link to='/'>
 						<li className='font-normal'>FAQS</li>
 					</Link>
-					<Link to='/'>
+					<Link to='/contact'>
 						<li className='font-normal'>Contact</li>
 					</Link>
 					<Link to='/'>
-						<Button text={"Register"} />
+						<CustomButton text={"Register"} />
 					</Link>
 				</ul>
 			</nav>
-            <hr className="border-[--horizontal-line-color]"/>
+			<hr className='border-[--horizontal-line-color]' />
 		</>
 	);
 }

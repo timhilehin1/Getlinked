@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import {CustomButton} from "./Button";
 import Idea from "./Idea";
 import Criteria from "./Criteria";
 import FAQ from "./FAQ";
@@ -27,7 +27,7 @@ function Hero() {
 						Participate in getlinked tech Hackathon 2023 stand a chance to win a
 						Big prize
 					</p>
-					<Button text={"Register"} />
+					<CustomButton text={"Register"} />
 				</div>
 
 				<div className='text-white bg-blend-hard-light'>

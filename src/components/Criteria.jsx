@@ -1,6 +1,6 @@
 import React from "react";
 import criteriaImage from "../assets/criteria.png";
-import Button from "./Button";
+import {CustomButton} from "./Button";
 
 function Criteria() {
 	const texts = [
@@ -53,7 +53,7 @@ function Criteria() {
 							</p>
 						);
 					})}
-                    <div className="mx-auto md:mx-0"><Button text={"Read More"} /></div>
+                    <div className="mx-auto md:mx-0"><CustomButton text={"Read More"} /></div>
 				</div>
 				
 			</p>

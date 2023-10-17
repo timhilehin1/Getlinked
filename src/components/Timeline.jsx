@@ -13,6 +13,7 @@ import smallTwo from "../assets/smallTwo.png";
 import smallThree from "../assets/smallThree.png";
 import smallFour from "../assets/smallFour.png";
 import smallFive from "../assets/smallFive.png";
+import mobileLine from "../assets/mobileLine.png";
 
 function Timeline() {
 	return (
@@ -146,6 +147,7 @@ function Timeline() {
 				<section className='flex gap-4 mt-2'>
 					<div className='left_hand_numbering flex flex-col gap-5 items-center'>
 						<div className='mobileLine'></div>
+						{/* <img className='' src={mobileLine} alt='smallOne' /> */}
 						<img className='' src={smallOne} alt='smallOne' />
 					</div>
 
@@ -154,10 +156,10 @@ function Timeline() {
 							Hackathon Announcement
 						</p>
 						<p className='leading-7'>
-							The getlinked tech hackathon 1.0 is formally announced <br /> to
+							The getlinked tech hackathon 1.0 is formally announced  to
 							the general public and teams begin to get ready to register
 						</p>
-						<p className='text-primary-color font-bold text-base'>
+						<p className='text-primary-color font-bold text-base mt-4'>
 							November 18, 2023
 						</p>
 					</div>
@@ -196,7 +198,7 @@ function Timeline() {
 						<p className='leading-7'>
 							Interested Participants are no longer Allowed to register
 						</p>
-						<p className='text-primary-color font-bold text-base'>
+						<p className='text-primary-color font-bold text-base mt-auto'>
 							November 18, 2023
 						</p>
 					</div>
@@ -225,7 +227,7 @@ function Timeline() {
 				<section className='flex gap-4 mt-2'>
 					<div className='left_hand_numbering flex flex-col gap-5 items-center'>
 						<div className='mobileLine'></div>
-						<img className='' src={smallFive} alt='smallOne' />
+						<img className='' src={smallFive} alt='smallFive' />
 					</div>
 
 					<div className='leading-7 text-left flex flex-col gap-0.5 w-full'>
@@ -236,7 +238,7 @@ function Timeline() {
 							Accepted teams can now proceed to build their ground breaking
 							skill driven solutions
 						</p>
-						<p className='text-primary-color font-bold text-base'>
+						<p className='text-primary-color font-bold text-base mt-auto'>
 							November 18, 2023
 						</p>
 					</div>
@@ -245,7 +247,7 @@ function Timeline() {
 				<section className='flex gap-4 mt-2'>
 					<div className='left_hand_numbering flex flex-col gap-5 items-center'>
 						<div className='mobileLine'></div>
-						<img  className='' src={smallSix} alt='smallOne' />
+						<img  className='' src={smallSix} alt='smallSix' />
 					</div>
 
 					<div className='leading-7 text-left flex flex-col gap-0.5 w-full'>
@@ -254,7 +256,7 @@ function Timeline() {
 							Interested teams can now show their interest in the getlinked tech
 							hackathon 1.0 2023 by proceeding to register
 						</p>
-						<p className='text-primary-color font-bold text-base'>
+						<p className='text-primary-color font-bold text-base mt-auto'>
 							November 18, 2023
 						</p>
 					</div>

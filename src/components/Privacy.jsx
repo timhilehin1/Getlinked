@@ -1,7 +1,7 @@
 import React from "react";
 import terms from "../assets/terms&Conditions.png";
 import approved from "../assets/approved.svg";
-import Button from "./Button";
+import {CustomButton} from "./Button";
 import privacy1 from "../assets/privacy1.png";
 import privacy2 from "../assets/privacy2.png";
 
@@ -49,7 +49,7 @@ function Privacy() {
 						</p>
 					</p>
 					<div className='text-center mt-4'>
-						<Button text={"Read More"} />
+						<CustomButton text={"Read More"} />
 					</div>
 				</div>
 			</div>

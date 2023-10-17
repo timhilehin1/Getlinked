@@ -6,6 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { PiPhoneCallLight, PiCopyright } from "react-icons/pi";
 import { MdLocationOn } from "react-icons/md";
 import Line from "../assets/verticalLine.svg";
+import { Link } from "react-router-dom";
 function Footer() {
 	return (
 		<>
@@ -42,7 +43,9 @@ function Footer() {
 				</div>
 
 				<div className='flex flex-col gap-4'>
-					<p className='text-primary-color font-semibold'>Contact Us</p>
+					<Link to={"/contact"}>
+						<p className='text-primary-color font-semibold'>Contact Us</p>
+					</Link>
 					<div className='flex gap-4 items-center'>
 						<PiPhoneCallLight size={24} />
 						<p>+234 8138109620</p>
