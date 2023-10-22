@@ -1,10 +1,12 @@
-import React from "react";
+import {React, useState} from "react";
 import registerBackGround from "../assets/registerBackground.png";
 import Navbar from "../components/Navbar";
 import man from "../assets/man.png";
 import woman from "../assets/woman.png";
+import Modal from "../components/Modal";
 
 function Register() {
+	const [openModal, setOpenModal] = useState(false);
 	const InputGroup = () => {
 		return (
 			<div className='flex flex-col'>
@@ -31,7 +33,7 @@ function Register() {
 					className='border border-white rounded bg-[#ffffff08] p-2.5 mt-2 outline-none'
 				>
 					{options?.map((option) => (
-						<option className='bg-[#ffffff08]' value={option}>
+						<option key={option} className='customSelectOption' value={option}>
 							{option}
 						</option>
 					))}
@@ -123,13 +125,14 @@ function Register() {
 					</p>
 
 					<div className='flex gap-2 items-center'>
-						<input type='checkbox' name='terms' id='terms' required />
+						<input  type='checkbox' name='terms' id='terms' required />
 						<label htmlFor='terms'>
 							I agreed with the event terms and conditions and privacy policy
 						</label>
 					</div>
 
-                    <button className="w-full rounded p-3 outline-none text-white bg-gradient-to-r from-purple-600 via-purple-400 to-pink-400 h-3.3rem">Register Now</button>
+                    <button onClick={()=>setOpenModal(true)} className="w-full rounded p-3 outline-none text-white bg-gradient-to-r from-purple-600 via-purple-400 to-pink-400 h-3.3rem">Register Now</button>
+					{openModal && <Modal setOpenModal={setOpenModal} />}
 				</form>
 			</section>
 		</div>
