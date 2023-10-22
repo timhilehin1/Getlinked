@@ -66,8 +66,7 @@ input[type="checkbox"]:checked {
 	transform: translate(-50%, -50%);
 }
 .modal {
-	width: 45rem;
-	height: 42rem;
+	/* width: 45rem; */
 	color: white;
 	z-index: 10;
 	border-radius: 0.3125rem;
