@@ -1,10 +1,16 @@
 import React from "react";
-import Button from "./Button";
+import {CustomButton} from "./Button";
 import Idea from "./Idea";
 import Criteria from "./Criteria";
 import FAQ from "./FAQ";
 import Rules from "./Rules";
+import Timeline from "./Timeline";
+import Prizes from "./Prizes";
+import Partners from "./Partners";
+import Privacy from "./Privacy";
 import heroImage from "../assets/heroImage.svg";
+import { Link } from "react-router-dom";
+
 function Hero() {
 	return (
 		<>
@@ -22,7 +28,7 @@ function Hero() {
 						Participate in getlinked tech Hackathon 2023 stand a chance to win a
 						Big prize
 					</p>
-					<Button text={"Register"} />
+					<Link to={'/register'}><CustomButton text={"Register"} /></Link>
 				</div>
 
 				<div className='text-white bg-blend-hard-light'>
@@ -44,6 +50,14 @@ function Hero() {
 			<Criteria />
 			<hr className='border-[--horizontal-line-color]' />
 			<FAQ />
+			<hr className='border-[--horizontal-line-color]' />
+			<Timeline />
+			<hr className='border-[--horizontal-line-color]' />
+			<Prizes />
+			<hr className='border-[--horizontal-line-color]' />
+			<Partners />
+			<hr className='border-[--horizontal-line-color]' />
+			<Privacy />
 			<hr className='border-[--horizontal-line-color]' />
 		</>
 	);
