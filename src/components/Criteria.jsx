@@ -48,7 +48,7 @@ function Criteria() {
 				<div className='flex flex-col gap-4 text-base text-center md:text-left'>
 					{texts.map((text) => {
 						return (
-							<p className='leading-8'>
+							<p key={text.id} className='leading-8'>
 								<span className='text-[#FF26B9]'>{text.title}</span>: {text.text}
 							</p>
 						);

@@ -29,7 +29,7 @@ function Timeline() {
 				</header>
 				{/* line */}
 				<img className='mx-auto mt-4' src={timeLine} alt='line' />
-				<section className='flex items-center   mt-8 text-base justify-between  testing'>
+				<section className='flex items-center   mt-8 text-base justify-between  timeline_container'>
 					<div className='flex flex-col gap-2 text-right'>
 						<p className='text-primary-color font-bold text-lg'>
 							Hackathon Announcement
@@ -47,7 +47,7 @@ function Timeline() {
 				{/* line */}
 				<img className='mx-auto mt-4' src={shortLine} alt='timeLine' />
 
-				<section className='flex items-center  mt-8 text-base  justify-between  testing'>
+				<section className='flex items-center  mt-8 text-base  justify-between  timeline_container'>
 					<p className='text-primary-color font-bold text-lg text-right'>
 						November 18, 2023
 					</p>
@@ -66,7 +66,7 @@ function Timeline() {
 				{/* line */}
 				<img className='mx-auto mt-4' src={shortLine} alt='timeLine' />
 
-				<section className='flex items-center   mt-8 text-base  testing'>
+				<section className='flex items-center   mt-8 text-base  timeline_container'>
 					<div className='flex flex-col gap-2 text-right'>
 						<p className='text-primary-color font-bold text-lg'>
 							Team Registration ends
@@ -84,7 +84,7 @@ function Timeline() {
 				{/* line */}
 				<img className='mx-auto mt-4' src={shortLine} alt='timeLine' />
 
-				<section className='flex items-center  mt-8 text-base   testing'>
+				<section className='flex items-center  mt-8 text-base   timeline_container'>
 					<p className='text-primary-color font-bold text-lg text-right'>
 						November 18, 2023
 					</p>
@@ -103,7 +103,7 @@ function Timeline() {
 				{/* line */}
 				<img className='mx-auto mt-4' src={shortLine} alt='timeLine' />
 
-				<section className='flex items-center  mt-8 text-base  testing'>
+				<section className='flex items-center  mt-8 text-base  timeline_container'>
 					<div className='flex flex-col gap-2 text-right'>
 						<p className='text-primary-color font-bold text-lg'>
 							Getlinked Hackathon 1.0 Offically Begins
@@ -120,7 +120,7 @@ function Timeline() {
 				{/* line */}
 				<img className='mx-auto mt-4' src={shortLine} alt='timeLine' />
 
-				<section className='flex items-center  mt-8 text-base  testing'>
+				<section className='flex items-center  mt-8 text-base  timeline_container'>
 					<p className='text-primary-color font-bold text-right'>
 						November 18, 2023
 					</p>
@@ -156,8 +156,8 @@ function Timeline() {
 							Hackathon Announcement
 						</p>
 						<p className='leading-7'>
-							The getlinked tech hackathon 1.0 is formally announced  to
-							the general public and teams begin to get ready to register
+							The getlinked tech hackathon 1.0 is formally announced to the
+							general public and teams begin to get ready to register
 						</p>
 						<p className='text-primary-color font-bold text-base mt-4'>
 							November 18, 2023
@@ -207,7 +207,7 @@ function Timeline() {
 				<section className='flex gap-4 mt-2'>
 					<div className='left_hand_numbering flex flex-col gap-2 items-center'>
 						<div className='mobileLine'></div>
-						<img  className='' src={smallFour} alt='smallOne' />
+						<img className='' src={smallFour} alt='smallOne' />
 					</div>
 
 					<div className='leading-7 text-left flex flex-col gap-0.5 w-full'>
@@ -247,7 +247,7 @@ function Timeline() {
 				<section className='flex gap-4 mt-2'>
 					<div className='left_hand_numbering flex flex-col gap-5 items-center'>
 						<div className='mobileLine'></div>
-						<img  className='' src={smallSix} alt='smallSix' />
+						<img className='' src={smallSix} alt='smallSix' />
 					</div>
 
 					<div className='leading-7 text-left flex flex-col gap-0.5 w-full'>

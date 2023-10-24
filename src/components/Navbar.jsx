@@ -11,7 +11,7 @@ function Navbar({ isRegister }) {
 	};
 	return (
 		<>
-			<section className='text-white container mx-auto flex justify-between border pt-2 md:pt-0  items-center px-2'>
+			<section className='text-white container py-6 md:py-2  mx-auto flex justify-between border pt-2 md:pt-0  items-center px-2'>
 				<Link to='/'>
 					<p className='font-normal text-xl'>
 						get<span className='text-primary-color'>linked</span>
@@ -36,38 +36,35 @@ function Navbar({ isRegister }) {
 						</NavLink>
 						{isRegister ? (
 							<Link to='/register'>
-							<RegisterButton text={"Register"} />
+								<RegisterButton text={"Register"} />
 							</Link>
 						) : (
-							<Link to='/'>
+							<Link to='/register'>
 								<CustomButton text={"Register"} />
 							</Link>
 						)}
 					</ul>
 				</nav>
 
-				{open ? (
-					<AiOutlineClose
-						onClick={handleToggle}
-						className='md:hidden cursor-pointer'
-						size={24}
+				<button className='md:hidden text-white' onClick={handleToggle}>
+					<img
+						className='w-[1.1875rem] h-[0.875rem]'
+						alt='menu-icon'
+						src={Menu}
 					/>
-				) : (
-					<button className='md:hidden text-white' onClick={handleToggle}>
-						<img
-							className='w-[1.1875rem] h-[0.875rem]'
-							alt='menu-icon'
-							src={Menu}
-						/>
-					</button>
-				)}
+				</button>
 			</section>
 
 			<nav
 				className={`mobile-menu ${
-					open ? "active" : ""
+					open ? "showNav" : ""
 				} py-4 text-white  items-center md:hidden`}
 			>
+				<AiOutlineClose
+					onClick={handleToggle}
+					className='md:hidden cursor-pointer float-right'
+					size={24}
+				/>
 				<ul className='flex flex-col gap-4 py-3 px-4'>
 					<Link to='/'>
 						<li className='font-normal'>Timeline</li>
@@ -81,7 +78,7 @@ function Navbar({ isRegister }) {
 					<Link to='/contact'>
 						<li className='font-normal'>Contact</li>
 					</Link>
-					<Link to='/'>
+					<Link to='/register'>
 						<CustomButton text={"Register"} />
 					</Link>
 				</ul>

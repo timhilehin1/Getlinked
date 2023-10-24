@@ -125,7 +125,7 @@ function Register() {
 					</p>
 
 					<div className='flex gap-2 items-center'>
-						<input  type='checkbox' name='terms' id='terms' required />
+						<input className="w-6"  type='checkbox' name='terms' id='terms' required />
 						<label htmlFor='terms'>
 							I agreed with the event terms and conditions and privacy policy
 						</label>

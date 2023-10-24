@@ -9,6 +9,7 @@ import Prizes from "./Prizes";
 import Partners from "./Partners";
 import Privacy from "./Privacy";
 import heroImage from "../assets/heroImage.svg";
+import { Link } from "react-router-dom";
 
 function Hero() {
 	return (
@@ -27,7 +28,7 @@ function Hero() {
 						Participate in getlinked tech Hackathon 2023 stand a chance to win a
 						Big prize
 					</p>
-					<CustomButton text={"Register"} />
+					<Link to={'/register'}><CustomButton text={"Register"} /></Link>
 				</div>
 
 				<div className='text-white bg-blend-hard-light'>
